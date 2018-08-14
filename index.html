@@ -18,16 +18,18 @@
   
   <script> 
   function getStarted() {
-    
-    var commands = {
-     'play *song': searchSong
-    }; 
-    var searchSong = function(song) {
+    if (annyang)
+    {
+      var commands = {
+         'play *song': searchSong
+      }; 
+      var searchSong = function(song) {
   
-    };
+      };
   
       annyang.addCommands(commands);
       annyang.start();
+    }
   }
   </script>
 </head>
