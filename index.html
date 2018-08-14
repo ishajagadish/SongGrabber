@@ -24,7 +24,9 @@
          'play *song': searchSong
       }; 
       var searchSong = function(song) {
-  
+         var element = document.getElementById("song");
+        element.value = song;
+
       };
   
       annyang.addCommands(commands);
