@@ -14,6 +14,7 @@
       font-size:14px;
     }
   </style>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 </head>
 
 <body>
@@ -24,9 +25,10 @@
   </p>
   <p>
     <form id="songform" action="https://www.youtube.com/results">
-      <input name="search_query" id="song" size="50"/>
+      <input type="text" name="search_query" id="song" size="50"/>
       <br/><br/><br/>
       <button class="btn"><i class="fas fa-microphone fa-5x"></i></button>
+      <input type="submit" value="Search"/>
     </form>
     </p>
   </center>
